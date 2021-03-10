@@ -4,6 +4,9 @@ import 'package:flutter_app_demos/pages/ListPage.dart';
 import 'package:flutter_app_demos/pages/SettingPage.dart';
 
 class MainHomePageFulWidget extends StatefulWidget {
+
+  static const String routeName = "/";
+
   @override
   _MainHomePageFulWidgetState createState() => _MainHomePageFulWidgetState();
 }

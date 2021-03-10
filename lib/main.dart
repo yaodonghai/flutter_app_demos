@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'mainPage/MainHomePage.dart';
+import 'router/Router.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MainHomePageFulWidget(),
+          primarySwatch: Colors.blue, splashColor: Colors.transparent),
+      routes: YDRouter.routes,
+      initialRoute: YDRouter.initialRoute,
+      onGenerateRoute: YDRouter.generateRoute,
+      onUnknownRoute: YDRouter.unknownRoute,
     );
   }
 }

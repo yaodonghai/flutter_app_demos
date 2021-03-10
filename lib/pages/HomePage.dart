@@ -19,12 +19,11 @@ class _HomePageContentState extends State<HomePageContent>  with TickerProviderS
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
   }
-  
+
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
-
       appBar: AppBar(
         title: Text('TabBar Widget'),
         bottom: TabBar(
